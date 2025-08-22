@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reprodutor de Áudio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player" id="player">
+            <h2 id="trackTitile">🎵 Tocando: musica.mp3</h2>
+            <audio id="audio" src="Rock lee vs Gaara - Linkin park.mp3"></audio>
+            <div class="controls">
+                <button id="playPause" title="play/Pause">▶️</button>
+                <div class="progress-container" title="Progresso">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="time">
+                <span id="currentTime">00:00</span>/
+                <span id="duration">00:00</span>
+            </div>
+            <div class="volume">
+                <label for="volumeRange">🔊</label>
+                <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1">
+            </div>
+            <button id="toggleTheme" class="theme-btn" title="Alternar tema">🌙</button>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>elementos de formulário</h2>
+            <div class="draggable" draggable="true" data-type="text">
+                <label>campo de texto</label>
+                <input type="text" placeholder="texto">
+            </div>
+            <div class="draggable" draggable="true" data-type="email">
+                <label>campo de email</label>
+                <input type="email" placeholder="email@exemplo.com">
+            </div>
+            <div class="draggable" draggable="true" data-type="password">
+                <label>campo de senha</label>
+                <input type="password" placeholder="senha">
+            </div>
+            <div class="draggable" draggable="true" data-type="number">
+                <label>campo numérico</label>
+                <input type="number" placeholder="número">
+            </div>
+            <div class="draggable" draggable="true" data-type="select">
+                <label>campo de seleção</label>
+                <select>
+                    <option value="">selecione uma opção</option>
+                    <option value="opcao1">opção 1</option>
+                </select>
+            </div>
+            <div class="draggable" draggable="true" data-type="check-box">
+                <label>caixa de checagem</label>
+                <input type="checkbox">
+            </div>
+            <div class="draggable" draggable="true" data-type="radio">
+                <label>botão de rádio</label>
+                <div>
+                    <input type="radio" name="radio-group" value="opcaoA">
+                    opção a
+                </div>
+                <div>
+                    <input type="radio" name="radio-group" value="opcaoB">
+                    opção b
+                </div>
+            </div>
+            <div class="draggable" draggable="true" data-type="textarea">
+                <label>área de texto</label>
+                <textarea placeholder="sua mensagem"></textarea>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>arraste e solte os campos aqui</h1>
+            <div class="drop-zone" id="form">
+               </div>
+          <button id="generate-html">gerar html</button>
+          <textarea id="generated-html-output" readonly
+          placeholder="o html gerado aparecerá aqui..."></textarea>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

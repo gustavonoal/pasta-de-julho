@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button onclick="formatar('bold')"><b>B</b></button>
+            <button onclick="formatar('italic')"><b>I</b></button>
+            <button onclick="formatar('underline')"><b>U</b></button>
+            <button onclick="salvarTexto('Salvar')">Salvar</button>
+            <button onclick="carregarTexto('Carregar')">Carregar</button>
+            <button onclick="limparTexto('Limpar')">Limpar</button>
+        </div>
+        <div id="editor" contenteditable="true" class="editor-area">
+            Escreva aqui...
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
